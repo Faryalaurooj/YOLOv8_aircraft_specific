@@ -1,0 +1,19 @@
+(yolov10) faryal@faryal-pc:~/Downloads/yolov8/ultralytics/models/yolo/detect$ yolo val model=yolov8mweights/best.pt data=aircraft.yaml batch=16
+/home/faryal/Downloads/yolov10/yolov10/ultralytics/nn/tasks.py:733: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ckpt = torch.load(file, map_location="cpu")
+Ultralytics YOLOv8.1.34 🚀 Python-3.9.19 torch-2.4.1+cu121 CUDA:0 (NVIDIA GeForce RTX 2080 SUPER, 7967MiB)
+YOLOv8m summary (fused): 218 layers, 25845550 parameters, 0 gradients, 78.7 GFLOPs
+val: Scanning /home/faryal/Downloads/yolov10/yolov10/ultralytics/models/yolov10/
+                 Class     Images  Instances      Box(P          R      mAP50  m
+                   all       1150       4618      0.949      0.979      0.977      0.773
+                  F_16       1150       1117      0.959      0.996      0.981      0.797
+                  F_35       1150        875      0.978      0.999      0.994      0.751
+                 SU_27       1150       1101      0.983      0.997      0.992      0.795
+                    WB       1150        171      0.994      0.993      0.994      0.843
+                 Other       1150        322      0.952      0.994      0.989      0.726
+                   A10       1150        281      0.825      0.829      0.873      0.654
+                  F_15       1150        166      0.993          1      0.995      0.776
+                  Pens       1150         35      0.875          1      0.975      0.814
+                  Ammo       1150        550       0.98          1      0.995      0.802
+Speed: 0.3ms preprocess, 7.1ms inference, 0.0ms loss, 1.7ms postprocess per image
+Results saved to /home/faryal/Downloads/yolov10/yolov10/runs/detect/val2

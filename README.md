@@ -3,13 +3,17 @@
 (base) faryal@faryal-pc:~/Downloads/yolov8/ultralytics/models/yolo/detect$ conda activate yolov10`
 
 ## Train
+go to the directory Downloads/yolov8/ultralytics/models/yolo/detect and run
 
+
+` yolo detect train data=aircraft.yaml model=yolov8s.yaml epochs=100  batch=16  imgsz=416 device=0,1`
 
 ## Val
 go to the directory Downloads/yolov8/ultralytics/models/yolo/detect and the run this command for validation on our custom aircraft images 
 
 
-`(yolov10) faryal@faryal-pc:~/Downloads/yolov8/ultralytics/models/yolo/detect$ yolo val model=best.pt data=aircraft.yaml batch=16`
+` yolo val model=best.pt data=aircraft.yaml batch=16`
+
 ![P_curve](https://github.com/user-attachments/assets/7584c57b-d0c3-488c-a2e8-b03fab663cd1)
 ![PR_curve](https://github.com/user-attachments/assets/51556639-2c00-4e9b-b096-06e1a94fae6d)
 ![R_curve](https://github.com/user-attachments/assets/63403d2b-23f3-49b9-b592-f29c4fce3019)

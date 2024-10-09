@@ -1,0 +1,21 @@
+500 epochs completed in 5.046 hours.
+Optimizer stripped from /home/faryal/Downloads/yolov10/yolov10/runs/detect/train23/weights/last.pt, 52.1MB
+Optimizer stripped from /home/faryal/Downloads/yolov10/yolov10/runs/detect/train23/weights/best.pt, 52.1MB
+
+Validating /home/faryal/Downloads/yolov10/yolov10/runs/detect/train23/weights/best.pt...
+Ultralytics YOLOv8.1.34 🚀 Python-3.9.19 torch-2.4.1+cu121 CUDA:0 (NVIDIA GeForce RTX 2080 SUPER, 7967MiB)
+                                                           CUDA:1 (NVIDIA GeForce RTX 2080 SUPER, 7960MiB)
+YOLOv8m summary (fused): 218 layers, 25845550 parameters, 0 gradients, 78.7 GFLOPs
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 72/72 [00:08<00:00,  8.80it/s]
+                   all       1150       4618      0.982      0.995      0.993      0.854
+                  F_16       1150       1117      0.991      0.997      0.994      0.866
+                  F_35       1150        875      0.995      0.997      0.995      0.806
+                 SU_27       1150       1101       0.99          1      0.992      0.858
+                    WB       1150        171      0.998          1      0.995      0.904
+                 Other       1150        322      0.982          1      0.993      0.805
+                   A10       1150        281      0.965      0.961      0.991      0.878
+                  F_15       1150        166      0.997          1      0.995       0.84
+                  Pens       1150         35      0.921          1      0.988      0.884
+                  Ammo       1150        550      0.995          1      0.995      0.843
+Speed: 0.1ms preprocess, 4.4ms inference, 0.0ms loss, 0.5ms postprocess per image
+Results saved to /home/faryal/Downloads/yolov10/yolov10/runs/detect/train23
